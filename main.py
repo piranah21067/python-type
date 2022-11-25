@@ -3,12 +3,13 @@ import time
 correct=0
 print("------- welcome to python type -------")
 print("------- by Tanish.K --------")
-words1= "i love python programming"
-words2="i have been coding for eleven years"
-words3="i am seventeen years old"
-words4="i like to play warzone 2.0"
-wordslist=[words1,words2,words3,words4]
-words=random.choice(wordslist)
+choice=input("would you like to enter a sentence of your choice")
+if choice=="yes" or choice=="Yes":
+    words=input("enter your sentence here:")
+    
+else:
+    wordslist=["i like to play warzone 2.0","i am seventeen years old","i have been coding for eleven years","i love python programming"]
+    words=random.choice(wordslist)
 print("                 "+words)
 start=time.time()
 type= input("type words here: ")
